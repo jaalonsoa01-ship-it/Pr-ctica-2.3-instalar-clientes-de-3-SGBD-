@@ -4,8 +4,10 @@
 Instale los clientes de Oracle
 
 | Clientes | Versiones | ¿Donde se obtuvo? |
-| --- | --- | --- |
-
+| --- |  --- | --- |
+| --- |  --- | --- |
+| --- |  --- | --- |
+| --- |  --- | --- |
 
 ### 2. Cómo instalaste o configuraste cada uno, con los comandos realmente utilizados.
 
