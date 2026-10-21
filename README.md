@@ -25,7 +25,7 @@ java --version
 
 sudo unzip instantclient-basic-linux.x64-23.26.3.0.0.zip -d /opt//opt/sqldeveloper/sqldeveloper.sh
 ```
-(Configuración del cliente grafico)[]
+![Configuración del cliente grafico] Evidencias/Captura de pantalla 2026-10-19 172315.png
 
 
 ***Configuración del cliente de VS (Tambien de OracleSQL Developer):***
@@ -33,7 +33,7 @@ sudo unzip instantclient-basic-linux.x64-23.26.3.0.0.zip -d /opt//opt/sqldevelop
 cd ~/Descargas
 sudo apt install ./code_1.142.0-17920350033_amd64.deb
 ```
-(Configuración del VS)[]
+![Configuración del VS](Evidencias/Captura de pantalla 2026-10-20 162550.png)
 
 ***Configuración del cliente de terminal SQL*Plus:***
 ```bash
@@ -62,7 +62,8 @@ sqlplus -v
 # Realizar Conexión
 sqlplus orauser@//localhost:1521/FREEPDB1
 ```
-(Configuración del SQL*Plus)[]
+
+![Configuración del SQL*Plus](Evidencias/Captura de pantalla 2026-10-19 172315.png)
 
 ***Configuración del cliente de terminal psql (PostgreSQL):***
 ```bash
@@ -73,7 +74,7 @@ sudo apt install postgresql-client
 psql --version
 psql -h localhost -U pguser -d dbpg -W
 ```
-(Configuración del cliente de terminal psql)[]
+![Configuración del cliente de terminal psql](Evidencias/Captura de pantalla 2026-10-19 172315.png)
 
 ***Configuración del cliente gráfico pgAdmin 4 (PostgreSQL):***
 ```bash
@@ -83,7 +84,7 @@ sudo sh -c 'echo "deb [signed-by=/etc/apt/keyrings/packages-pgadmin-org.gpg] htt
 
 sudo apt install pgadmin4-desktop
 ```
-(Configuración del cliente gráfico pgAdmin 4)[]
+![Configuración del cliente gráfico pgAdmin 4](Evidencias/Captura de pantalla 2026-10-19 172315.png)
 
 ***Configuración del cliente de terminal mariadb (o mysql)):***
 ```bash
@@ -113,7 +114,7 @@ GRANT ALL PRIVILEGES ON *.* TO 'adminphp'@'localhost' WITH GRANT OPTION;
 FLUSH PRIVILEGES;
 EXIT;
 ```
-(Acceso a MariaDB mediante phpMyAdmin)[]
+![Acceso a MariaDB mediante phpMyAdmin](Evidencias/Captura de pantalla 2026-10-19 172315.png)
 
 ***Configuración del DBeaver:***
 ```bash
@@ -121,7 +122,7 @@ cd ~/Descargas
 sudo apt install ./dbeaver-ce-26.2.3-linux-x86_64.deb
 sudo dpkg -i dbeaver-ce-26.2.3-linux-x86_64.deb
 ```
-(Configuración del DBeaver)[]
+![Configuración del DBeaver](Evidencias/Captura de pantalla 2026-10-19 172315.png)
 
 ### 3. Una prueba de conexión con un cliente de consola y otro gráfico o web para cada SGBD. Indica servidor, puerto, base o servicio y usuario, pero nunca la contraseña.
 
