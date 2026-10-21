@@ -1,7 +1,11 @@
 # Practica-2.3-instalar-clientes-de-3-SGBD-
 
 ### 1. Qué clientes instalaste, sus versiones, de dónde los obtuviste y qué dependencias necesitaron.
-Instale los clientes de 
+Instale los clientes de Oracle
+
+| Clientes | Versiones | ¿Donde se obtuvo? |
+| --- | --- | --- |
+
 
 ### 2. Cómo instalaste o configuraste cada uno, con los comandos realmente utilizados.
 
@@ -11,6 +15,6 @@ Instale los clientes de
 
 ### 5. Las fuentes consultadas y, si usas capturas o salidas de terminal, una explicación breve de qué demuestra cada una.
 
-Evidencias 
+
 
 
