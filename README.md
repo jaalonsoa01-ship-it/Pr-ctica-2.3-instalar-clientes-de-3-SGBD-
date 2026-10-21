@@ -9,7 +9,7 @@ Instale los clientes de Oracle (Version_23_26), PostgreSQL, MariaDB y DBeaver re
 | Oracle SQLcl |  26.0.23 | [Web de oracle](https://www.oracle.com/database/sqldeveloper/instantclient/linux-x86-64-download.html) | Java |
 | Oracle SQL Developer |  26.0.23 | [Web de oracle](https://www.oracle.com/database/sqldeveloper/instantclient/linux-x86-64-download.html) | JDK, unzip |
 | PostgreSQL psql | 26.3 | [Repositorio pgadmin](https://www.pgadmin.org/download/pgadmin-4-apt/) | postgresql-client |
-| PostgreSQL pgadmin4 | 26.3 | [Repositorio pgadmin](https://www.pgadmin.org/download/pgadmin-4-apt/)n | curl, gnupg |
+| PostgreSQL pgadmin4 | 26.3 | [Repositorio pgadmin](https://www.pgadmin.org/download/pgadmin-4-apt/) | curl, gnupg |
 | MariaDB mariadb |  15.1 | apt (Descarga mediante Consola) | mariadb-client |
 | MariaDB phpMyAdmin |  15.1 | apt (Descarga mediante Consola) | apache2, php |
 | DBeaver |  26.2.3 | [Web de DBeaver](https://dbeaver.io/download/) | Java/JDBC |
@@ -164,4 +164,4 @@ sudo apt update
 ### 5. Las fuentes consultadas y, si usas capturas o salidas de terminal, una explicación breve de qué demuestra cada una.
 Las fuentes consultadas fueron el documento indicado: https://informatica.iesalbarregas.com/pluginfile.php/15395/mod_assign/introattachment/0/Practica_Instalar_Clientes_3_SGBD.pdf?forcedownload=1
 
-
+Las imágenes proporcionadas están en la carpeta "Evidencias" 
