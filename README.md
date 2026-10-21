@@ -25,7 +25,8 @@ java --version
 
 sudo unzip instantclient-basic-linux.x64-23.26.3.0.0.zip -d /opt//opt/sqldeveloper/sqldeveloper.sh
 ```
-![Configuración del cliente grafico] Evidencias/Captura de pantalla 2026-10-19 172315.png
+
+![Configuración Oracle](Evidencias/ConectOracle.png)
 
 
 ***Configuración del cliente de VS (Tambien de OracleSQL Developer):***
@@ -33,7 +34,8 @@ sudo unzip instantclient-basic-linux.x64-23.26.3.0.0.zip -d /opt//opt/sqldevelop
 cd ~/Descargas
 sudo apt install ./code_1.142.0-17920350033_amd64.deb
 ```
-![Configuración del VS](Evidencias/Captura de pantalla 2026-10-20 162550.png)
+
+![Configuración del VS](Evidencias/VSstatus.png)
 
 ***Configuración del cliente de terminal SQL*Plus:***
 ```bash
@@ -63,7 +65,7 @@ sqlplus -v
 sqlplus orauser@//localhost:1521/FREEPDB1
 ```
 
-![Configuración del SQL*Plus](Evidencias/Captura de pantalla 2026-10-19 172315.png)
+![Oracle Status](Evidencias/StatusOracle.png)
 
 ***Configuración del cliente de terminal psql (PostgreSQL):***
 ```bash
@@ -74,7 +76,7 @@ sudo apt install postgresql-client
 psql --version
 psql -h localhost -U pguser -d dbpg -W
 ```
-![Configuración del cliente de terminal psql](Evidencias/Captura de pantalla 2026-10-19 172315.png)
+![Configuración del pgadmin4](Evidencias/Postgresqlstatus.png)
 
 ***Configuración del cliente gráfico pgAdmin 4 (PostgreSQL):***
 ```bash
@@ -84,7 +86,7 @@ sudo sh -c 'echo "deb [signed-by=/etc/apt/keyrings/packages-pgadmin-org.gpg] htt
 
 sudo apt install pgadmin4-desktop
 ```
-![Configuración del cliente gráfico pgAdmin 4](Evidencias/Captura de pantalla 2026-10-19 172315.png)
+![Configuración del psql](Evidencias/PGAdminstatus.png)
 
 ***Configuración del cliente de terminal mariadb (o mysql)):***
 ```bash
@@ -105,6 +107,10 @@ sudo a2enconf phpmyadmin
 sudo systemctl reload apache2
 ```
 
+![Configuración del Apache2](Evidencias/Apache2.png)
+
+![Configuración del phpMyAdmin](Evidencias/phyadminrt.png)
+
 **En la terminal ponemos lo siguiente:**
 ```
 sudo mariadb
@@ -114,7 +120,10 @@ GRANT ALL PRIVILEGES ON *.* TO 'adminphp'@'localhost' WITH GRANT OPTION;
 FLUSH PRIVILEGES;
 EXIT;
 ```
-![Acceso a MariaDB mediante phpMyAdmin](Evidencias/Captura de pantalla 2026-10-19 172315.png)
+
+![Acceso a MariaDB mediante phpMyAdmin login](Evidencias/login.png)
+
+![Acceso a MariaDB mediante phpMyAdmin menu](Evidencias/menu.png)
 
 ***Configuración del DBeaver:***
 ```bash
@@ -126,32 +135,31 @@ sudo dpkg -i dbeaver-ce-26.2.3-linux-x86_64.deb
 
 ### 3. Una prueba de conexión con un cliente de consola y otro gráfico o web para cada SGBD. Indica servidor, puerto, base o servicio y usuario, pero nunca la contraseña.
 
-(Prueba de conexión del cliente de cliente)[]
-- Servidor
-- Puerto
-- Servicio
-- Usuario
-  
-(Prueba de conexión del cliente de cliente)[]
-- Servidor
-- Puerto
-- Servicio
-- Usuario
-  
-(Prueba de conexión del cliente de cliente)[]
-- Servidor
-- Puerto
-- Servicio
-- Usuario
-  
-(Prueba de conexión del cliente de cliente)[]
+![Prueba de conexión del cliente de cliente](Evidencias/StatusOracle.png)
+
+![Prueba de conexión del cliente de cliente](Evidencias/muser.png)
+
+![Prueba de conexión del cliente de cliente](Evidencias/pguser.png)
+
+![Prueba de conexión del cliente de cliente](Evidencias/tres.png)
 
 
 ### 4. Qué problemas surgieron y cómo los resolviste; si alguno de los clientes no llegó a funcionar, incluye el error y las comprobaciones realizadas.
 
 **1. Asunto de la conexión con los repositorios (Problemas con los paquetes relacionados a libaio1)**
 
-Es uno de los pocos problemas que tuve (sorprendentemente no fue un problema relacionado con Java), durante la extracción y la lectura del archivo ```libaio1``` daño el sistema de paquetes de linux, razón por la cual, el proceso afecto también a los repositorio relacionados al proceso apt. Para recuperar la función de apt, decidí usar los siguientes comandos
+![error1](Evidencias/Error1.png)
+
+Es uno de los pocos problemas que tuve (sorprendentemente no fue un problema relacionado con Java), durante la extracción y la lectura del archivo ```libaio1``` daño el sistema de paquetes de linux, razón por la cual, el proceso afecto también a los repositorio relacionados al proceso apt. Para recuperar la función de apt, decidí usar los siguientes comandos:
+
+```bash
+# Borrar los antiguos repositorios
+sudo rm /etc/apt/sources.list.d/pgadmin4.list
+sudo rm /usr/share/keyrings/pgadmin.gpg
+
+# Y reinstalarlos/actualizarlos
+sudo apt update
+```
 
 ### 5. Las fuentes consultadas y, si usas capturas o salidas de terminal, una explicación breve de qué demuestra cada una.
 Las fuentes consultadas fueron el documento indicado: https://informatica.iesalbarregas.com/pluginfile.php/15395/mod_assign/introattachment/0/Practica_Instalar_Clientes_3_SGBD.pdf?forcedownload=1
